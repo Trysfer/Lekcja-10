@@ -42,8 +42,29 @@ Highlights
 - Clean separation between data schema and business rules.
 - Ready for automatic API documentation with ``pdoc``.
 
+Tenants Desciption
+----------
+
+Args:
+----
+    name (str): Just the name
+    apartment (str): Name of Apartment
+    room (str): Name of Room
+    rent_pln (int): Value of Rent
+    deposit_pln (int): Value of deposits made
+
+Returns:
+-------
+    float: The annual balance.
+
+Example:
+-------
+    >>> manager = Manager()
+    >>> manager.calculate_annual_balance(year=2023)
+
 Authors
 ------
-Łukasz Kułacz - initial implementation, testing, documentation
+- Łukasz Kułacz - initial implementation, testing, documentation
+- Norbert Obst - just your typical worker
 
 """
